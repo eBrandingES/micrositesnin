@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Oficinas en alquiler - Nápoles 227</title>
+    <meta name="robots" content="INDEX, FOLLOW" >
+    <link rel="icon" href="images/rsc/logotipo-NN-verde_512-60x60.png" sizes="32x32" />
+    <link rel="icon" href="images/rsc/logotipo-NN-verde_512.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="images/rsc/logotipo-NN-verde_512.png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Oswald:400,500|Raleway:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/dashicons/0.1.0/css/dashicons.min.css">
+    <?php wp_head(); ?> 
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/css/swiper.min.css">
+
+    <link rel="stylesheet" href="iconin.css">
+    <!--[if lt IE 8]><!-->
+    <link rel="stylesheet" href="ie7/ie7.css">
+    <!--<![endif]-->
+
+    <!-- Demo styles -->
+    <style>
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        background: none;
+      }
+      .swiper-slide .gal-text {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+      }
+      .swiper-button-next{
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+        background-size: 100% 100%;
+        width: 30px;
+        height: 30px;
+        right: 30px;
+      }      
+      .swiper-button-prev{
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+        background-size: 100% 100%;
+        width: 30px;
+        height: 30px;
+        left: 30px;
+      }
+      .swiper-pagination-bullet{
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+        min-width: 30px;
+        height: 3px;
+        display: inline-block;
+        border-radius: 0;
+        background: #ffffff;
+        opacity: .6;
+      }
+      .swiper-pagination-bullet-active{
+        opacity: 1;
+        background: #ffffff;
+      }
+      .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+        margin: 4px;
+      }
+
+      /* iconos características */
+
+      .icons{
+        font-size: 2.1rem;
+      }
+      #map {
+        height: 400px;
+        width: 100%;
+      }
+      #planos .small{
+        font-size: 90% !important;
+      }
+      .lupa{
+        position: relative;
+      }
+      .lupa:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: rgba(0,0,0,.3);
+        opacity: 0;
+        transition: opacity .5s linear;
+      }
+      .lupa:hover:before{
+        opacity: 1;
+      }
+      .lupa-position{
+        position: absolute;
+        top: 37%;
+        left: 45%;
+        color: rgba(0,0,0,.3);
+        opacity: .5;
+        font-size:2rem;
+      }
+      .lupa:hover .lupa-position{
+        opacity: 1;
+        color: rgba(255,255,255,.8);
+        transition: opacity .5s linear;
+        transition: color .5s linear;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Preheader -->
+    <div class="container-fluid px-5 py-2 bg-secondary hidden-sm-down" style="border-bottom: 0.01rem solid #ccc;">
+      <div class="row">
+        <div class="col-12 col-sm-7 col-lg-9">
+          <p class=" mb-0 text-white">
+            <small class="pr-2">Pisos de obra nueva en venta en Mataró</small> | <small class="px-2">Tef. 934 050 101</small> | <small class="px-2"><a href="mailto:inmo@nyn.es" class="text-white">inmo@nyn.es</a></small>
+          </p>
+        </div>
+        <div class="col-12 col-sm-5 col-lg-3 d-flex justify-content-sm-end text-white">
+          <p class="mx-3 mb-0"><small class="text-uppercase">Nuñez i Navarro</small></p>
+          <p class="mx-3 mb-0"><small></small></p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Menu -->
+    <nav class="navbar navbar-toggleable-lg navbar-light sticky-top bg-white main-nav">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" data-scroll href="#inicio">
+        <img src="images/rsc/NN-horizontal_color.png" width="auto" height="40" class="d-inline-block align-top" alt=""></a>
+        <h1 hidden>Oficinas Napoles 227 - Barcelona - Nuñez i Navarro</h1>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item mr-2 pt-1 active">
+            <a data-scroll href="#description" class="nav-link">Descripción</a>
+          </li>
+          <li class="nav-item mr-2 pt-1">
+            <a data-scroll href="#caracteristicas" class="nav-link">Características</a>
+          </li>
+          <li class="nav-item mr-2 pt-1">
+            <a data-scroll href="#galeria" class="nav-link">Galería</a>
+          </li>
+          <li class="nav-item mr-2 pt-1">
+            <a data-scroll href="#location" class="nav-link">Localización</a>
+          </li>
+          <li class="nav-item mr-2 pt-1">
+            <a data-scroll href="#planos" class="nav-link">Planos</a>
+          </li>
+          <li class="nav-item mr-4 pt-1">
+            <a data-scroll href="#garantia" class="nav-link">Garantía NN</a>
+          </li>
+          <li class="nav-item mr-3 mt-2 mt-xl-0 mx-auto">
+            <a data-scroll href="#contacto" class="nav-link text-white d-block float-left bg-primary px-4 pt-2 round-btn"><span class="dashicons dashicons-admin-users text-white float-left pt-0 mr-2"></span>Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav> 
+
+    <!-- Header -->
+    <section id="inicio" class="bg-napoles-main py-5 bg-primary-2">
+      <div class="gradient h-100 w-100"></div>
+      <div class="container pt-5 text-white">
+        <div class="row pt-5">
+          <div class="col pt-5 mt-5">
+            <h1 class="display-3 pt-5 mt-5">Napoles 227</h1>
+            <h2>Edificio de oficinas en alquiler</h2>
+            <h4>Barcelona</h4>
+            <p class="text-center bg-primary px-4 py-3 float-left text-uppercase my-5"><a href="#contacto" class="text-white font-weight-bold">Contacte con un asesor</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Descripcion -->
+    <section id="description" class="bg-secondary py-5">
+      <div class="container text-white">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <h2>Descripción</h2>
+          </div>
+          <div class="col-12 col-lg-6">
+            <p>Edificio de oficinas exteriores en buen estado con servicio de conserjería en horario comercial y 2 ascensores.</p>
+            <p>Plantas prácticamente diáfanas de 246 m² y 253 m² construidos, con dos baños y zonas office.</p>
+            <p>Buenos acabados y especificaciones técnicas: suelo técnico y de parqué, luminaria fluorescente encastada en falso techo, sistema de climatización individual y VRV, fibra óptica, detectores de incendios y ventanas practicables que dotan de gran luminosidad todos los espacios. Alta del suministro de la luz.</p>
+            <p>Gestión y servicio de mantenimiento Núñez i Navarro.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Caracteristicas -->
+    <section id="caracteristicas" class="bg-secondary-2 py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <h2 class="">Características Generales</h2>
+          </div>
+          <div class="col-12 col-lg-6 pb-5">
+            <div class="container-fluid pb-5 pl-0">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="pb-5">
+                    <i class="iconin iconin-superficie2 float-left pt-0 mr-0 mr-md-2 mt-2" aria-hidden="true"></i>
+                    <p class="pl-5">Superficie de las plantas de 246m2 y 253m<sup>2</sup></p>
+                  </div>
+                  <div class="pb-5">
+                    <i class="iconin iconin-ascensor float-left pt-0 mr-0 mr-md-2 mt-2" aria-hidden="true"></i>
+                    <p class="pl-5 pt-2">2 ascensores</p>
+                  </div>
+                  <div class="pb-5">
+                    <i class="fa fa-map-marker icons float-left pt-0 mr-0 mr-md-2 mt-2" aria-hidden="true"></i>
+                    <p class="pl-5">Calle Nàpols con la Avenida Diagonal</p>
+                  </div>
+                  <div class="pb-5">
+                    <i class="fa fa-cog icons float-left pt-0 mr-0 mr-md-2 mt-2" aria-hidden="true"></i>
+                    <p class="pl-5">Gestión y servicio de mantenimiento Núñez i Navarro.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="pb-5"> 
+                    <i class="fa fa-user-plus icons float-left pt-0 mr-0 mr-md-2 mt-2" aria-hidden="true"></i>
+                    <p class="pl-5">Servicio de conserjería en horario comercial</p>
+                  </div>
+                  <div class="pb-5">
+                    <i class="fa fa-check-square-o icons float-left pt-0 mr-0 mr-md-2 mt-2" aria-hidden="true"></i>
+                    <p class="pl-5 pt-2">Buenos acabados</p>
+                  </div>
+                  <div class="pb-5">
+                    <i class="fa fa-wifi icons float-left pt-0 mr-0 mr-md-2 mt-2" aria-hidden="true"></i>
+                    <p class="pl-5 pt-2">Conexiónes de fibra óptica</p>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Swiper -->
+    <section id="galeria">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/galeria/interior3.jpg" alt="" class="w-100 h-100">
+            <div class="gal-text">
+              <p class="h3 font-weight-bold float-left pr-2">01 | </p>
+              <p class="h3 float-left">Fachada del edificio desde la calle Nàpols</p>
+            </div>
+          </div>
+          <div class="swiper-slide">          
+            <img src="images/galeria/interior3.jpg" alt="" class="w-100 h-100">
+            <div class="gal-text">
+              <p class="h3"><span class="font-weight-bold">02 | </span>Fachada del edificio desde la calle Nàpols</p>
+            </div>
+          </div>
+          <div class="swiper-slide">          
+            <img src="images/galeria/interior3.jpg" alt="" class="w-100 h-100">
+            <div class="gal-text">
+              <p class="h3"><span class="font-weight-bold">03 | </span>Fachada del edificio desde la calle Nàpols</p>
+            </div>
+          </div>
+          <div class="swiper-slide">          
+            <img src="images/galeria/interior3.jpg" alt="" class="w-100 h-100">
+            <div class="gal-text">
+              <p class="h3"><span class="font-weight-bold">04 | </span>Fachada del edificio desde la calle Nàpols</p>
+            </div>
+          </div>
+          <div class="swiper-slide">          
+            <img src="images/galeria/interior3.jpg" alt="" class="w-100 h-100">
+            <div class="gal-text">
+              <p class="h3"><span class="font-weight-bold">05 | </span>Fachada del edificio desde la calle Nàpols</p>
+            </div>
+          </div>
+          <div class="swiper-slide">          
+            <img src="images/galeria/interior3.jpg" alt="" class="w-100 h-100">
+            <div class="gal-text">
+              <p class="h3"><span class="font-weight-bold">06 | </span>Fachada del edificio desde la calle Nàpols</p>
+            </div>
+          </div>
+          <div class="swiper-slide">          
+            <img src="images/galeria/interior3.jpg" alt="" class="w-100 h-100">
+            <div class="gal-text">
+              <p class="h3"><span class="font-weight-bold">07 | </span>Fachada del edificio desde la calle Nàpols</p>
+            </div>
+          </div>
+          <div class="swiper-slide">          
+            <img src="images/galeria/interior3.jpg" alt="" class="w-100 h-100">
+            <div class="gal-text">
+              <p class="h3"><span class="font-weight-bold">08 | </span>Fachada del edificio desde la calle Nàpols</p>
+            </div>
+          </div>
+          <div class="swiper-slide">          
+            <img src="images/galeria/interior3.jpg" alt="" class="w-100 h-100">
+            <div class="gal-text">
+              <p class="h3"><span class="font-weight-bold">09 | </span>Fachada del edificio desde la calle Nàpols</p>
+            </div>
+          </div>
+          <div class="swiper-slide">          
+            <img src="images/galeria/interior3.jpg" alt="" class="w-100 h-100">
+            <div class="gal-text">
+              <p class="h3"><span class="font-weight-bold">10 | </span>Fachada del edificio desde la calle Nàpols</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+
+    <!-- Location -->
+    <section id="location" class="bg-primary-2 py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <h2 class="">Localización</h2>
+          </div>
+          <div class="col-12 col-lg-6 pb-5">
+            <p>Ubicada en la Calle Nàpols con la Avenida Diagonal, eje principal de conexión y negocios de la ciudad, se envuelve de una amplia oferta de comercios, restaurantes, gimnasios, atención sanitaria, hoteles y zonas ajardinadas.</p>
+            <p>Una zona muy transitada con transporte público cercano. Numerosas líneas de autobús: 6, 19, 33, 34, 50, 51, 55, H10, N1, N7 y la parada Verdaguer de la Línea 4 y 5 de metro, a una manzana.</p>                        
+            <div class="container-fluid pt-5 pl-0">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="pb-5">
+                    </span><i class="fa fa-bus icons float-left pt-0 mr-0 mr-md-2 mt-2" aria-hidden="true"></i>
+                    <p class="pl-5">Líneas: 6, 19, 33, 34, 50, 51, 55, H10, N1, N7.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="pb-5"> 
+                    </span><i class="fa fa-train icons float-left pt-0 mr-0 mr-md-2 mt-2" aria-hidden="true"></i>
+                    <p class="pl-5">Línea 4 y 5 - Parada Verdaguer.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+          <div id="map"></div>            
+          </div>
+        </div>
+      </div>    
+    </section>
+
+    
+
+    <!-- Planos -->
+    <section id="planos" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <h2 class="">Planos</h2>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="d-flex pb-5">
+              <a class="mr-4 lupa" data-toggle="modal" data-target="#oficinaone">
+                <i class="fa fa-search-plus lupa-position" aria-hidden="true"></i>
+                <img src="planos/img-planos/OFICINA-1-PLANTA-ENTRESUELO.jpg" alt="plano Oficina 1 Planta entresuelo" height="auto" width="180" class="float-left">
+              </a>
+              <div class="float-left mt-2">
+                <h5 class="text-uppercase">Oficina 1 planta entresuelo</h5>
+                <p class="text-uppercase small">Superficie: 287,23 m<sup>2</sup><br>
+                Precio €/mes: 3.160€<br>
+                Precio €/m2: 11,00€</p>
+              </div>
+            </div>
+            <div class="d-flex pb-5">
+              <a class="mr-4 lupa" data-toggle="modal" data-target="#oficinatwo">
+                <i class="fa fa-search-plus lupa-position" aria-hidden="true"></i>
+                <img src="planos/img-planos/OFICINA-PLANTA-1.jpg" alt="plano Oficina Planta 1ª" height="auto" width="180" class="float-left">
+              </a>
+              <div class="float-left mt-4">
+                <h5 class="text-uppercase">Oficina Planta 1ª</h5>
+                <p class="text-uppercase small">Superficie: 294,27 m<sup>2</sup><br>
+                Precio €/mes: 3.237€<br>
+                Precio €/m2: 11,00€</p>
+              </div>
+            </div>
+            <div class="d-flex pb-5">
+              <a class="mr-4 lupa" data-toggle="modal" data-target="#oficinathree">
+                <i class="fa fa-search-plus lupa-position" aria-hidden="true"></i>
+                <img src="planos/img-planos/OFICINA-PLANTA-3.jpg" alt="plano Oficina Planta 3ª" height="auto" width="180" class="float-left">
+              </a>
+              <div class="float-left mt-4">
+                <h5 class="text-uppercase">Oficina Planta 3ª</h5>
+                <p class="text-uppercase small">Superficie: 294,27 m<sup>2</sup><br>
+                Precio €/mes: 3.237€<br>
+                Precio €/m2: 11,00€</p>
+              </div>
+            </div>
+            <div class="d-flex pb-5">
+              <a class="mr-4 lupa" data-toggle="modal" data-target="#oficinafour">
+                <i class="fa fa-search-plus lupa-position" aria-hidden="true"></i>
+                <img src="planos/img-planos/OFICINA-PLANTA-4.jpg" alt="plano Oficina Planta 4ª" height="auto" width="180" class="float-left">
+              </a>
+              <div class="float-left mt-4">
+                <h5 class="text-uppercase">Oficina Planta 4ª</h5>
+                <p class="text-uppercase small">Superficie: 294,27 m<sup>2</sup><br>
+                Precio €/mes: 3.237€<br>
+                Precio €/m2: 11,00€</p>
+              </div>
+            </div>
+            <div class="d-flex pb-5">
+              <a class="mr-4 lupa" data-toggle="modal" data-target="#oficinafive">
+                <i class="fa fa-search-plus lupa-position" aria-hidden="true"></i>
+                <img src="planos/img-planos/OFICINA-PLANTA-6.jpg" alt="plano Oficina Planta 6ª" height="auto" width="180" class="float-left">
+              </a>
+              <div class="float-left mt-4">
+                <h5 class="text-uppercase">Oficina Planta 6ª</h5>
+                <p class="text-uppercase small">Superficie: 294,27 m<sup>2</sup><br>
+                Precio €/mes: 3.237€<br>
+                Precio €/m2: 11,00€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="oficinaone" tabindex="-1" role="dialog" aria-labelledby="oficinaone" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header ml-4 pb-0">
+            <h5 class="modal-title" id="#oficinaone">Oficina 1 - Planta Entresuelo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-0 text-center">
+            <img src="planos/img-planos/OFICINA-1-PLANTA-ENTRESUELO-lg.jpg" alt="plano Oficina 1 Planta entresuelo" height="auto" width="490">
+          </div>
+          <div class="modal-footer mr-4 pt-0">
+            <a href="planos/OFICINA-1-PLANTA-ENTRESUELO-1276201001.pdf" target="_blank" class="btn btn-primary">Abrir PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="oficinatwo" tabindex="-1" role="dialog" aria-labelledby="oficinatwo" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header ml-4 pb-0">
+            <h5 class="modal-title" id="#oficinatwo">Oficina Planta 1ª</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-0 text-center">
+            <img src="planos/img-planos/OFICINA-PLANTA-1-lg.jpg" alt="plano Oficina Planta 1ª" height="auto" width="490">
+          </div>
+          <div class="modal-footer mr-4 pt-0">
+            <a href="planos/OFICINA-PLANTA-1-1276201010.pdf" target="_blank" class="btn btn-primary">Abrir PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="oficinathree" tabindex="-1" role="dialog" aria-labelledby="oficinathree" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header ml-4 pb-0">
+            <h5 class="modal-title" id="#oficinathree">Oficina Planta 3ª</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-0 text-center">
+            <img src="planos/img-planos/OFICINA-PLANTA-3-lg.jpg" alt="plano Oficina Planta 3ª" height="auto" width="490">
+          </div>
+          <div class="modal-footer mr-4 pt-0">
+            <a href="planos/OFICINA-PLANTA-3-1276201030.pdf" target="_blank" class="btn btn-primary">Abrir PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="oficinafour" tabindex="-1" role="dialog" aria-labelledby="oficinafour" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header ml-4 pb-0">
+            <h5 class="modal-title" id="#oficinafour">Oficina Planta 4ª</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-0 text-center">
+            <img src="planos/img-planos/OFICINA-PLANTA-4-lg.jpg" alt="plano Oficina Planta 4ª" height="auto" width="490">
+          </div>
+          <div class="modal-footer mr-4 pt-0">
+            <a href="planos/OFICINA-PLANTA-4-1276201040.pdf" target="_blank" class="btn btn-primary">Abrir PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="oficinafive" tabindex="-1" role="dialog" aria-labelledby="oficinafive" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header ml-4 pb-0">
+            <h5 class="modal-title" id="#oficinafive">Oficina Planta 6ª</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-0 text-center">
+            <img src="planos/img-planos/OFICINA-PLANTA-6-lg.jpg" alt="plano Oficina Planta 6ª" height="auto" width="490">
+          </div>
+          <div class="modal-footer mr-4 pt-0">
+            <a href="planos/OFICINA-PLANTA-6-1276201060.pdf" target="_blank" class="btn btn-primary">Abrir PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+    <!-- Garantia NN -->
+    <section id="garantia" class="py-5 bg-garantia-na">
+      <div class="bg-darker h-100 w-100"></div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper py-5 text-white">
+          <div class="swiper-slide">
+            <div class="garantia-slide m-5 p-5">
+              <p class="h3 px-5 mx-5"><span class="font-weight-bold">Creemos en el valor de la comunicación personal, por eso siempre te atenderá directamente nuestro responsable de Nuñez i Navarro, un interlocutor único para todas tus consultas, visitas, etc.</p>
+              <p class="text-uppercase pt-5">Garantía - Nuñez i Navarro</p>
+            </div>
+          </div>
+          <div class="swiper-slide">          
+            <div class="garantia-slide m-5 p-5">
+              <p class="h3 px-5 mx-5"><span class="font-weight-bold">Más de 65 años de experiencia en la construcción y promoción inmobiliaria es toda una garantía a la hora de tomar una decisión tan importante como la compra de una vivienda.</p>
+              <p class="text-uppercase pt-5">Profesionalidad - Nuñez i Navarro</p>
+            </div>
+          </div>
+          <div class="swiper-slide">          
+            <div class="garantia-slide m-5 p-5">
+              <p class="h3 px-5 mx-5"><span class="font-weight-bold">Nuestra profesionalidad está más que probada, somos una de las empresas más prestigiosas del sector inmobiliario gracias a nuestro rigor y autoexigencia.</p>
+              <p class="text-uppercase pt-5">Experiencia - Nuñez i Navarro</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-5 bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <h2 class="">Contacto</h2>
+            <div class="pt-5 d-flex">
+              </span><i class="fa fa-phone icons float-left pt-0 mr-0 mr-md-2" aria-hidden="true"></i>
+              <p class="pl-4">934 050 101</p>
+            </div>
+            <div class="pt-5 d-flex">
+              </span><i class="fa fa-envelope icons float-left pt-0 mr-0 mr-md-2" aria-hidden="true"></i>
+              <p class="pl-4">inmo@nyn.es</p>
+            </div>
+            <div class="pt-5 d-flex">
+              </span><i class="fa fa-map-marker icons float-left pt-0 mr-0 mr-md-2" aria-hidden="true"></i>
+              <p class="pl-4">C/ Nàpols, 227 - Barcelona</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            FORMULARIO
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Float buttons -->    
+    <a href="tel:+34934050101" class="fixed-bottom float-buttons float-ntn-l text-white bg-secondary px-2 py-2 round-btn hidden-md-up">
+      <span class="fa fa-phone d-block" style="font-size: 1.5rem;padding: 2px 4px;"></span>
+    </a>
+    <a data-scroll="" href="#contacto" class="fixed-bottom float-buttons float-ntn-r float-right text-white bg-primary px-2 px-md-4 py-2 round-btn hidden-md-up">
+      <span class="dashicons dashicons-admin-users text-white float-left pt-0 mr-0 mr-md-2"></span>
+      <span class="hidden-sm-down text-uppercase float-btn">Contacto</span>
+    </a>
+
+
+
+    <div class="container-fluid bg-secondary">
+      <div class="row text-left text-white my-0">
+        <div class="col-12 col-md-3 my-5 text-center">
+          <img src="images/rsc/logo_nyn_amarillo-small.png" alt="" height="40" width="auto">
+        </div>
+        <div class="col-12 col-md-3 my-4 px-5 pl-md-0 pr-md-5">
+          <h6 class="pt-4 pb-2">NOSOTROS</h6>
+          <p class="pr-4 small">Núñez i Navarro es un grupo empresarial de Barcelona que, desde hace más de 65 años, se dedica a la construcción y promoción inmobiliaria, a la rehabilitación de edificios históricos, a la venta y alquiler de pisos y oficinas, plazas de aparcamiento, locales comerciales y naves industriales. Dentro del grupo también encontramos una cadena hotelera con 10 hoteles y un edificio de apartamentos turísticos en el centro de Barcelona y el centro comercial del Pallol (Reus). </p>
+        </div>
+        <div class="col-12 col-md-3 my-4 px-5 pl-md-0">
+          <h6 class="pt-4 pb-2">OTRAS PROMOCIONES</h6>
+          <ul class="small pl-3">
+            <li><a href="http://sites.xn--nuezinavarro-bhb.es/obra-nueva-sabadell-can-gambus/" class="text-white">Nou Can Gambús</a></li>
+            <li><a href="http://sites.xn--nuezinavarro-bhb.es/pisos-mataro-obra-nueva/" class="text-white">Pizarro, 82-88</a></li>
+            <li><a href="http://sites.xn--nuezinavarro-bhb.es/pisos-obra-nueva-barcelona-can-drago/" class="text-white">Concepción Arenal 296</a></li>
+            <li><a href="http://sites.xn--nuezinavarro-bhb.es/pisos-venta-en-sant-andreu-meridiana/" class="text-white">Meridiana, 256</a></li>
+            <li><a href="http://sites.xn--nuezinavarro-bhb.es/pisos-venta-en-gracia/" class="text-white">Pje. Nogués, 71</a></li>
+            <li><a href="http://sites.xn--nuezinavarro-bhb.es/pisos-centro-barcelona/" class="text-white">Manso, 56</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-3 my-4 px-5 pl-md-0">
+          <h6 class="pt-4 pb-2">CONTACTO</h6>
+          <p class="small">C/ Urgell, 230<br>
+          08036 · Barcelona</p>
+          <p class="small">Tel: 93 363 69 50<br>
+          Email: <a href="mailto:inmo@nyn.es" class="text-white">inmo@nyn.es</a></p>
+          <a href="https://twitter.com/GROUPNN" class="mr-2"><img src="images/social-icons/Twitter_logo_white_128.png" alt="twitter Nuñez i Navarro" height="18" width="auto"></a>
+          <a href="https://www.instagram.com/groupnn/" class="mr-2"><img src="images/social-icons/instagram_logo_white_128.png" alt="Instagram Nuñez i Navarro" height="18" width="auto"></a>
+          <a href="https://www.youtube.com/channel/UCjX0XSViJFp8cHu3fU_m9ug"><img src="images/social-icons/YouTube_light_color_icon_128.png" alt="Youtube Nuñez i Navarro" height="18" width="auto"></a>
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid bg-secondary">
+      <div class="row text-center my-0">
+        <div class="col-12 text-center my-4">
+          <a href="/condiciones-generales/" target="_blank" class="text-white small">Condiciones legales</a>
+        </div>
+        <p class="m-auto pb-5"><a data-scroll href="#inicio" class="text-center text-white px-2 py-2 rounded-circle"><span class="dashicons dashicons-arrow-up-alt small"></span></a></p>
+      </div>
+    </footer>
+    
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+     <!-- Scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/11.1.0/js/smooth-scroll.min.js"></script>
+    <script>
+      smoothScroll.init({
+      selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+      selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+      speed: 1500, // Integer. How fast to complete the scroll in milliseconds
+      easing: 'easeInOutQuad', // Easing pattern to use
+      offset: 260, // Integer. How far to offset the scrolling anchor location in pixels
+      callback: function ( anchor, toggle ) {} // Function to run after scrolling
+      });
+    </script>
+
+      <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 0,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  <script> 
+    $('.navbar-nav>li>a').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+    });
+  </script>
+    <script>
+      var napoles = {lat: 41.400401, lng: 2.172775};
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: napoles
+        });
+  
+        var iconBase = 'file:///Users/jorge/Documents/GitHub/micrositesnin/images/rsc/';
+        var icons = {
+          ninLogo: {
+            icon: iconBase + 'logotipo-NN-verde_45.png'
+          }
+        };
+  
+        var features = [
+          {
+            position: new google.maps.LatLng(41.400401, 2.160775),
+            type: 'ninLogo'
+          }
+        ];
+  
+      // Create markers.
+      features.forEach(function(feature) {
+        var marker = new google.maps.Marker({
+          position: feature.position,
+          icon: icons[feature.type].icon,
+          map: map
+        });
+      });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfjNw9OKNBFX-d4Gt73U_R9qgjI2Mn0nc&callback=initMap">
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,734 @@
+/*
+Theme Name: BootstrapNN
+Author: eBranding
+Author URI: http://ebranding.es/
+Description: Theme developed by eBranding.
+Version: 1.0
+*/
+/* Responsive typography */
+html {
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased!important;
+}
+body{  
+  font-family: 'Raleway', 'Helvetica Neue', sans-serif;
+}
+p{
+  font-weight: 300;
+}
+.navbar li {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  -webkit-font-smoothing: auto;
+  letter-spacing: 1px;
+}
+
+
+/* text color */
+.text-primary{
+  color: #fbba00!important;
+}
+.text-secondary{
+  color: rgb(0, 65, 54);
+}
+.text-dark{
+  color: #292b2c;
+}
+.text-fade{
+  color: #777777;
+}
+.text-shadow{
+  text-shadow: 0.15rem 0.15rem 0.15rem #333333;
+}
+.text-spaced{
+  letter-spacing: 1px;
+}
+/*figure.text-white a{
+  color: #ffffff!important;
+}*/
+.text-underlined{
+  text-decoration: underline;
+}
+.display-small{
+	font-size: 2.6rem;
+	font-weight: 300;
+	line-height: 1.1;
+}
+.text-nodeco, .text-nodeco:focus, .text-nodeco:visited{
+	text-decoration: none;
+}
+
+/* Buttons */
+
+.btn-primary{
+  background-color: #fbba00;
+  color: #ffffff;
+  border: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.btn:focus, .btn-primary:focus{
+	box-shadow: none;
+	webkit-box-shadow:none;
+}
+.btn-primary:hover,.btn-primary:active,.btn-primary:focus {
+  background-color: #fbba00;
+  color: #ffffff;
+}
+.btn-secondary{
+  background-color: #004136;
+  color: #ffffff;
+}
+.btn-secondary:hover{
+  background-color: #00513e;
+  color: #ffffff;
+}
+.navbar-toggler{
+  border: none!important;
+}
+
+/* Backgrounds */
+.bg-primary{
+  background-color: #fbba00 !important;
+}
+a.bg-primary{
+  border: 1px solid #fbba00;
+}
+
+a.bg-primary:focus, a.bg-primary:hover{
+  background-color: #ffffff !important;
+  border: 1px solid #fbba00;
+  color: #fbba00!important;
+}
+
+a.bg-primary:focus span.dashicons, a.bg-primary:hover span.dashicons{
+  background-color: #ffffff !important;
+  color: #fbba00!important;
+  text-decoration: none;
+}
+a.bg-secondary{
+  border: 1px solid #ffffff;
+}
+a.bg-secondary:focus, a.bg-secondary:hover{
+  background-color: #ffffff !important;
+  border: 1px solid rgb(0, 65, 54);
+  color: rgb(0, 65, 54)!important;
+}
+
+a.bg-secondary:focus span.dashicons, a.bg-secondary:hover span.dashicons{
+  background-color: #ffffff !important;
+  color: rgb(0, 65, 54)!important;
+  text-decoration: none;
+}
+
+.bg-secondary{
+  background-color: rgb(0, 65, 54);
+}
+
+.bg-white{
+  background-color: #fff;
+}
+.bg-table{
+  background-color: #efefef;
+}
+.thead-primary{
+	background-color:rgb(0, 65, 54)!important;
+	color: #ffffff;
+}
+.table tr{
+  border-bottom: 2px solid #ffffff;
+}
+.bg-main-mobile{
+  background: url(/wp-content/themes/bootstrapNN/images/mataro/NN_PIZARRO_82-88_movil.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+}
+.bg-main-mobile-ca{
+  background: url(/wp-content/themes/bootstrapNN/images/concepcion-arenal/concepcion-arenal-movil.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+}
+.bg-main-mobile-ta{
+  background: url(/wp-content/themes/bootstrapNN/images/tarradellas/Oficinas_en_Barcelona_NiN_menu-mov.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+}
+.bg-main-mobile-cg{
+  background: url(/wp-content/themes/bootstrapNN/images/can-gambus/localizacion_can_gambus.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+}
+
+.bg-main-mobile-me{
+  background: url(/wp-content/themes/bootstrapNN/images/meridiana/meridiana256-movil.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+}
+
+.bg-main-mobile-ma{
+  background: url(/wp-content/themes/bootstrapNN/images/manso/manso-movil.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+}
+
+.bg-main-mobile-no{
+  background: url(/wp-content/themes/bootstrapNN/images/nogues/nogues-movil.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+}
+.bg-viviendas{
+  background-color: #f4f4f4;
+}
+
+.bg-collage{
+  background: url(/wp-content/themes/bootstrapNN/images/rsc/hojas_background-web.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-location-mataro{
+  background: url(/wp-content/themes/bootstrapNN/images/mataro/localizacion-web-mataro.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-location-ca{
+  background: url(/wp-content/themes/bootstrapNN/images/concepcion-arenal/localizacion-web-concepcion-arenal.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-location-ta{
+  background: url(/wp-content/themes/bootstrapNN/images/tarradellas/Oficinas_en_Barcelona_NiN_localizacion.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-location-cg{
+  background: url(/wp-content/themes/bootstrapNN/images/can-gambus/localizacion_can_gambus.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-location-me{
+  background: url(/wp-content/themes/bootstrapNN/images/meridiana/localizacion-web-meridiana.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-location-ma{
+  background: url(/wp-content/themes/bootstrapNN/images/manso/localizacion-web-manso.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-location-no{
+  background: url(/wp-content/themes/bootstrapNN/images/nogues/localizacion-web-nogues.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-card{
+  background: #eeeeee;
+}
+
+.bg-garantia{
+  background: url(/wp-content/themes/bootstrapNN/images/mataro/calidadnn_mataro-web.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-garantia-ca{
+  background: url(/wp-content/themes/bootstrapNN/images/concepcion-arenal/calidadnn_concepcion-arenal.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-garantia-ta{
+  background: url(/wp-content/themes/bootstrapNN/images/tarradellas/Oficinas_en_Barcelona_NiN_menu-mov.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-garantia-cg{
+  background: url(/wp-content/themes/bootstrapNN/images/can-gambus/calidadnyn_can_gambus.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-garantia-me{
+  background: url(/wp-content/themes/bootstrapNN/images/meridiana/calidadnn_meridiana.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-garantia-ma{
+  background: url(/wp-content/themes/bootstrapNN/images/manso/calidadnn_manso.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-garantia-no{
+  background: url(/wp-content/themes/bootstrapNN/images/nogues/calidadnn_nogues.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-garantia-na{
+  background-image: url(images/galeria/interior6.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.bg-darker{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgba(0,0,0,.3);
+  z-index: 1;
+}
+.bg-napoles-main{  
+  background-image: url(images/galeria/fachada.jpg);
+  background-size: cover;
+  background-position: center; 
+  position: relative;
+}
+.gradient{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 30%, rgba(0,0,0,0.5) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 30%,rgba(0,0,0,0.5) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 30%,rgba(0,0,0,0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+}
+.bg-primary-2{
+  background-color: rgba(0,68,56,0.35);
+}
+.bg-secondary-2{
+  background-color: rgba(240,171,0,0.35);
+}
+
+/* Headings */
+h2.h2title{
+  font-family: 'Oswald';
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+
+p.galnumber{
+  font-family: 'Oswald';
+}
+.benefits{
+  font-size: 1.1rem;
+}
+.bg-main-mobile h2.display-4, .bg-main-mobile-ca h2.display-4, .bg-main-mobile-ta h2.display-4, .bg-main-mobile-cg h2.display-4{
+  font-weight: 900;
+}
+
+/* Recursos */
+
+.squared {
+  padding: 20px;
+  border: 1px solid #ffffff;
+}
+.round-btn{
+  -webkit-border-radius: 999rem;
+  border-radius: 999rem;
+}
+
+.main-nav{
+  border-bottom: 1px solid #ddd;
+}
+section.listado a.btn{
+  width: 98%;
+  white-space: initial!important;
+}
+section.listado a.doubleheight{
+  line-height: 2.4rem;
+}
+.bg-garantia{
+  height: 500px;
+}
+.bg-garantia p.h2{
+  line-height: 2.5rem;
+}
+
+.carousel-control-next, .carousel-control-prev{
+  width: 10%!important;
+}
+.nota {
+    font-size: 0.7rem!important;
+    font-weight: 100;
+    font-style: italic;
+}
+.gal-title {
+  min-height: 96px;
+}
+.gal-description{
+  min-height: 125px;
+}
+
+.maps iframe{
+    pointer-events: none;
+}
+
+/* Modal Popup */
+.modal-backdrop{
+  display: none;
+}
+.modal-dialog{
+  margin-top: 100px!important;
+}
+.modal-content{
+  /* border: none;
+ -webkit-border-radius: 0;
+  border-radius: 0;
+  background-color: rgb(0,68,54);
+  height: 370px;
+  width: auto;*/
+}
+.modal-header{
+  border-bottom: 0;
+}
+.modal-title{
+  font-size: 1.6rem;
+ /* line-height: 2rem;*/
+}
+.modal-footer{
+  border-top: 0;
+}
+modal-footer a{
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.close{
+  opacity: 1;
+  font-size: 1.2rem;
+  text-align: right; 
+  font-weight: 300;
+  display: block;
+}
+
+/* Menu visual */
+
+div.blockone figure, div.blocktwo figure{
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+div.blockone figure p.menutitle, div.blocktwo figure p.menutitle{
+  position:absolute;
+  top:25%;
+  text-shadow: 1px 1px 1px #333333;
+}
+.menutitle{
+  position:absolute;
+  top:25%;
+  text-shadow: 1px 1px 1px #333333;
+}
+.menutitle .display-4{
+  font-weight: 900;
+}
+div.blockone figure p.menusubtitle, div.blocktwo figure p.menusubtitle{
+  position:absolute;
+  top:40%;
+  text-shadow: 1px 1px 1px #333333;
+}
+div.blockone figcaption, div.blocktwo figcaption {
+  width: 100%;
+  bottom: 0;
+  opacity: 0;
+  position: absolute;
+  background: rgba(0,0,0,0.8);
+  transform: translateY(100%);
+  transition: transform 0.4s, opacity 0.1s;
+}
+div.blockone figure:hover figcaption, div.blocktwo figure:hover figcaption {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: transform 0.4s, opacity 0.1s;
+}
+.blockone figcaption h3, .blocktwo figcaption h3{
+  font-size: 24px;
+  color: #fbba00;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+.blockone figcaption hr, .blocktwo figcaption hr{
+  width:80px; 
+  border:0.5px solid #fbba00;
+}
+.blockone figcaption p, .blocktwo figcaption p{
+  text-align: center;
+  color: #ffffff;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+.blockone figcaption a, .blocktwo figcaption a{
+  display: block;
+  text-align: right;
+  padding-right: 20px;
+  color: #fbba00;
+  text-decoration: none;
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+}
+.menutitle.display-4{
+  font-weight: 900;
+}
+/* Boxes - Características */
+.boxes figure{
+  overflow: hidden;
+  position: relative;  
+  height: 230px;
+}
+.boxes figcaption{
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+}
+.boxes figure:hover figcaption{
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+.boxes figure:hover figcaption p{
+  transform: translateY(-20px);
+  transition: transform 0.6s;
+}
+i.oficicon {
+    color: rgba(0,68,56,1);
+}
+.fa-5x.oficicon {
+    font-size: 6.5em!important;
+}
+
+
+/* Carousel */
+.carousel-item img{
+}
+.galnumber {
+  border-right: 1px solid #fbba00;
+}
+
+
+/* tabs */
+
+.pestanas .nav-link {
+  background-color: #f5f5f5;
+  width: 180px;
+  text-align: center;
+  padding: 10px 10px;
+}
+.pestanas a.nav-link{
+  color: #292b2c;
+}
+.pestanas a.nav-link:hover{
+  color: #292b2c;
+}
+.pestanas .nav-link:hover {
+  background-color: #eeeeee;
+}
+.pestanas .nav-link.active {
+  background-color: #fbba00;
+  color: #ffffff;
+}
+.pestanas a.nav-link.active:hover {
+  color: #ffffff;
+}
+
+/* cards */
+.height-card{
+  height: 90px;
+}
+.card.bg-card{
+  border:none;
+}
+.plano-link{
+  font-size: 11px;
+  line-height: 32px;
+}
+.certi-link{
+  font-size: 11px;
+  line-height: 16px;
+}
+
+
+/* Float buttons */
+
+.float-btn{
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  -webkit-font-smoothing: auto;
+  letter-spacing: 1px;
+}
+.float-buttons .dashicons {
+  font-size: 25px!important;
+  height: 25px!important;
+  width: 25px!important;
+}
+a.float-buttons,a.float-buttons:focus,a.float-buttons:hover{
+  text-decoration: none!important;
+}
+.float-ntn-l{
+  left: 22px;
+  right: initial;
+  bottom: 35px;
+}
+.float-ntn-r{
+  right: 22px;
+  left: initial;
+  bottom: 35px;
+}
+
+/* Contact Form 1*/
+
+
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="date"], input[type="number"], select{
+    background: #f5f5f5;
+    border: none;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    letter-spacing: 1px;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select{
+  font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #777;
+    letter-spacing: 1px;
+}
+
+textarea{
+    width: 100%;
+    border: none;
+    background: #f5f5f5;
+    margin-bottom: 24px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    padding: 16px 20px;
+    height: 275px;
+}
+
+input[type="submit"], button[type="submit"]{
+  height: 50px;
+    line-height: 48px;
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    -webkit-border-radius: 0!important;
+    border-radius: 0!important;
+    width: initial;
+    padding: 0 15px;
+    background: #004136;
+    border-color: #004136;
+    margin-bottom: 0;
+    border-style: none;
+    cursor: pointer;
+}
+
+/* Swiper Carousel */
+.swiper-container {
+   width: 100%;
+   height: 100%;
+}
+.swiper-slide {
+   /*text-align: center;
+   font-size: 18px;*/
+   background: #fff;
+/* Center slide text vertically */
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    /*-webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;*/
+}
+/* Responsive */
+
+
+@media (max-width: 768px) {
+  .carousel-text, .carousel-text .h5, .carousel-text p, .carousel-text .lead {
+    font-size: 0.9rem;
+  }
+  .carousel-text .h4 {
+    font-size: 1rem;
+  }
+  .carousel-text .display-2 {
+    font-size: 3.5rem;
+  }
+  .bg-garantia {
+    height: 400px!important;
+  }
+  .bg-garantia p small {
+    font-size: 0.7rem;
+  }
+  .carousel.bg-garantia p{
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+  #carouselGarantiaNN p.h2{
+    font-size: 1.5rem!important;
+    line-height: 1.5rem!important;
+  }
+  .boxes span.display-4{
+    font-size: 2.75rem;
+  }
+  .pestanas .nav-link {
+    width: 120px;
+    min-height: 52px;
+  }
+  section.listado a.btn{
+    line-height: 34px;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 0.8rem;
+  }  
+  .carousel-text .lead {
+    font-weight: 100;
+    font-size: 1rem;
+  }
+  .txt-img{
+	height: 420px;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 0.8rem;
+  }
+  .carousel-item img{
+	height: 420px;
+	min-width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 0.9375rem;
+  }
+}
